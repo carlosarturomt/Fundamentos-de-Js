@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Courgette', cursive;
+}
+
+body {
+    margin: 0;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./assets/imgs/hogwarts.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    /* background: #243149; */
+    background: none;
+}
+
+header div {
+    height: 6rem;
+    padding: 0.5rem 1.5rem;
+}
+
+header .header__img {
+    width: 55px;
+    height: 60px;
+    min-width: 70px;
+    max-width: 150px;
+    margin-left: 0.5rem;
+}
+
+header .header__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .header__menu {
+    margin-right: 0px;
+}
+
+header .header__menu--profile {
+    display: flex;
+    padding-top: 0px;
+}
+
+header .header__menu--profile a {
+    text-decoration: none;
+}
+
+header .header__menu--profile a:hover {
+    text-decoration: underline white;
+}
+
+header .header__menu--profile p {
+    padding: 1.5rem 0.5rem;
+    padding-right: 0px;
+    color: rgb(184, 141, 0);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.gameboard {
+    width: 310px;
+    height: 365px;
+    /* border-radius: 10%; */
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 500px;
+    /* border: solid rgb(234, 190, 63) 10px;
+    box-shadow: 0px 1px 10px rgb(105, 82, 10); */
+}
+
+.color {
+    width: 137px;
+    height: 165px;
+    display: inline-block;
+}
+
+.colorInf {
+    margin: 0px;
+    width: 155px;
+    height: 195px;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.rojo {
+    margin-left: 16px;
+    background-image: url(./assets/imgs/gryffindor.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: maroon;
+    border-right: solid rgb(234, 190, 63) 5px;
+    border-bottom: solid rgb(234, 190, 63) 5px; */
+    /* border-right: solid #42516D 5px;
+    border-bottom: solid #42516D 5px; */
+}
+
+.rojo.light {
+    background-image: url(./assets/imgs/gryffindorIlu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: red;
+    border-right: solid rgb(255, 24, 24) 5px;
+    border-bottom: solid rgb(255, 24, 24) 5px; */
+}
+
+.verde {
+    background-image: url(./assets/imgs/slythein.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: green;
+    border-left: solid rgb(234, 190, 63) 5px;
+    border-bottom: solid rgb(234, 190, 63) 5px; */
+    /* border-left: solid #42516D 5px;
+    border-bottom: solid #42516D 5px; */
+}
+
+.verde.light {
+    background-image: url(./assets/imgs/slytheinIlu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: greenyellow;
+    border-left: solid rgb(195, 255, 104) 5px;
+    border-bottom: solid rgb(195, 255, 104) 5px; */
+}
+
+.amarillo {
+    margin-left: -2px;
+    background-image: url(./assets/imgs/hufflepuff\ .png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: orange; */
+    /* border-right: solid #42516D 5px;
+    border-top: solid #42516D 5px; */
+    /* border-right: solid rgb(234, 190, 63) 5px;
+    border-top: solid rgb(234, 190, 63) 5px; */
+}
+
+.amarillo.light {
+    background-image: url(./assets/imgs/hufflepuffIlu\ .png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: yellow;
+    border-right: solid rgb(253, 253, 97) 5px;
+    border-top: solid rgb(253, 253, 97) 5px; */
+}
+
+.azul {
+    background-image: url(./assets/imgs/ravenclaw.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: teal; */
+    /* border-left: solid #42516D 5px;
+    border-top: solid #42516D 5px; */
+    /* border-left: solid rgb(234, 190, 63) 5px;
+    border-top: solid rgb(234, 190, 63) 5px; */
+}
+
+.azul.light {
+    background-image: url(./assets/imgs/ravenclawIlu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: turquoise;
+    border-left: solid rgb(124, 233, 222) 5px;
+    border-top: solid rgb(124, 233, 222) 5px; */
+}
+
+button {
+    background: none;
+}
+
+.btn-start {
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 63px);
+    border-radius: 10%;
+    background-image: url(assets/imgs/btn.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: none;
+    border: none;
+    background-color: none;
+    /* border: turquoise solid; */
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+}
+
+.hide1 {
+    width: 120px;
+    padding: 1rem 2rem;
+    font-size: 8rem;
+}
+
+.btn-start:hover {
+    background-image: url(assets/imgs/btn.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* color: #243149;
+        border: solid #243149 8px; */
+    outline: none;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    margin-top: 90.8vh;
+    width: 100%;
+}
+
+footer h3 {
+    background: none;
+    /* background-color: #243149; */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    border-top: white solid 0.1px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3>a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h3>a:hover {
+    text-decoration: underline;
+}

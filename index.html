@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simon Dice es un proyecto del curso Fundamentos de JavaScript de Platzi.">
+    <title>Simon Dice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/svg" href="./assets/icons/game.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="(min-width: 900px)">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__img">
+            <a href="index.html"> <img src="./assets/imgs/hogwartsLogo.png" alt="Logo de Simón Dice">
+            </a>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <a href="https://prueba.carlosarturomt.com">
+                    <p>Biografía</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="gameboard">
+        <div id="rojo" class="color rojo left" data-color="rojo"></div>
+        <div id="verde" class="color verde right" data-color="verde"></div>
+        <div id="amarillo" class="colorInf amarillo left" data-color="amarillo"></div>
+        <div id="azul" class="colorInf azul right" data-color="azul"></div>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+    </div>
+    <footer>
+        <hgroup>
+            <h3><a href="https://prueba.carlosarturomt.com">Carlos Arturo Miranda Trujano</a></h3>
+            <h3>&copy;2021 Proyecto <a href="https://platzi.com/home">Platzi</a></h3>
+        </hgroup>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="./simonDice2021.js"></script>
+</body>
+
+</html>
